@@ -1,92 +1,33 @@
-# Byte-compiled / cache
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
+*.egg-info/
+.eggs/
 build/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Virtual environments
-.venv/
-venv/
-ENV/
-env/
+# uv / virtualenv
+.venv
+uv.lock.bak
 
-# Poetry
-poetry.toml
-
-# Testing / coverage
-.coverage
-.coverage.*
-htmlcov/
-.pytest_cache/
-
-# Type checking
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Ruff
-.ruff_cache/
-
-# Pyre
-.pyre/
-
-# Logs
-*.log
-logs/
-
-# Environment files
+# Environment
 .env
 .env.local
-.env.*.local
 
-# IDEs
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
 .vscode/
 .idea/
-
-# OS files
+*.swp
 .DS_Store
 Thumbs.db
 
-# Docker
-*.pid
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Alembic
-alembic/versions/*.pyc
-
-# Testcontainers
-.testcontainers/
-
-# Terraform
-*.tfstate
-*.tfstate.*
-.terraform/
-
-# Kubernetes secrets/configs
-kubeconfig
-*.kubeconfig
-
-# Local databases
-*.db
-*.sqlite3
+# Local data volumes
+postgres-data/
+redis-data/
