@@ -12,7 +12,7 @@ repos:
   # ruff and mypy run from the project's own .venv via uv, so the hook versions
   # can never drift from uv.lock the way pinned upstream `rev:`s do/
   - repo: local
-    hook:
+    hooks:
       - id: ruff-check
         name: ruff check
         entry: uv run ruff check --force-exclude --fix

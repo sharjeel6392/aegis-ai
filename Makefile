@@ -47,7 +47,7 @@ test:
 
 lint:
 	$(UV) run ruff check .
-	$(uv) run ruff format --check .
+	$(UV) run ruff format --check .
 
 fmt:
 	$(UV) run ruff format .
